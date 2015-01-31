@@ -81,7 +81,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="qNj-Zu-WLg">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Dqb-w4-qIe"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Dqb-w4-qIe">
+                            <connections>
+                                <segue destination="GL0-Zh-Aak" kind="modal" id="KZD-hm-2bS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="HQu-NS-9fV" id="BgB-Gm-sY4"/>
@@ -97,7 +101,52 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="766" y="406"/>
+            <point key="canvasLocation" x="620" y="406"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="BSu-0l-o2S">
+            <objects>
+                <viewController id="GL0-Zh-Aak" customClass="SettingsViewController" customModule="tipster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="08W-K7-rod">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Percentage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NEs-iO-KKr">
+                                <rect key="frame" x="16" y="83" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="FQC-l9-xkS">
+                                <rect key="frame" x="16" y="112" width="288" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9gD-2B-eif">
+                                <rect key="frame" x="145" y="420" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchUpInside:" destination="GL0-Zh-Aak" eventType="touchUpInside" id="R5C-hm-Y0g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="defaultPercentageControl" destination="FQC-l9-xkS" id="I3D-hQ-Rc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zp0-iH-4Cf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kK8-dT-ch9">

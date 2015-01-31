@@ -13,6 +13,7 @@
 		4A2D99691A7D81D400A4F90E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D99681A7D81D400A4F90E /* Images.xcassets */; };
 		4A2D996C1A7D81D400A4F90E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D996A1A7D81D400A4F90E /* LaunchScreen.xib */; };
 		4A2D99781A7D81D400A4F90E /* tipsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2D99771A7D81D400A4F90E /* tipsterTests.swift */; };
+		4A2D99881A7D960200A4F90E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2D99871A7D960200A4F90E /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4A2D99711A7D81D400A4F90E /* tipsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2D99761A7D81D400A4F90E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A2D99771A7D81D400A4F90E /* tipsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsterTests.swift; sourceTree = "<group>"; };
+		4A2D99871A7D960200A4F90E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,8 @@
 		4A2D995E1A7D81D400A4F90E /* tipster */ = {
 			isa = PBXGroup;
 			children = (
+				4A2D99861A7D95C700A4F90E /* View Controllers */,
 				4A2D99611A7D81D400A4F90E /* AppDelegate.swift */,
-				4A2D99631A7D81D400A4F90E /* ViewController.swift */,
 				4A2D99651A7D81D400A4F90E /* Main.storyboard */,
 				4A2D99681A7D81D400A4F90E /* Images.xcassets */,
 				4A2D996A1A7D81D400A4F90E /* LaunchScreen.xib */,
@@ -110,6 +112,15 @@
 				4A2D99761A7D81D400A4F90E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A2D99861A7D95C700A4F90E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A2D99631A7D81D400A4F90E /* ViewController.swift */,
+				4A2D99871A7D960200A4F90E /* SettingsViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 			files = (
 				4A2D99641A7D81D400A4F90E /* ViewController.swift in Sources */,
 				4A2D99621A7D81D400A4F90E /* AppDelegate.swift in Sources */,
+				4A2D99881A7D960200A4F90E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +417,7 @@
 				4A2D997D1A7D81D400A4F90E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A2D997E1A7D81D400A4F90E /* Build configuration list for PBXNativeTarget "tipsterTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +426,7 @@
 				4A2D99801A7D81D400A4F90E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
